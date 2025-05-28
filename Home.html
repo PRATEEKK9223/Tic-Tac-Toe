@@ -6,86 +6,30 @@
     <meta name="author" content="PR_Techify">
     <link rel="icon" href="TicTacToe.jpeg">
     <title>Tic-Tac-Toe</title>
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;  
-        }
-
-        :root{
-            font-size:62.5%;
-        }
-        body{
-            background-color:#fff;
-            color:#000;
-            font-family: Arial, sans-serif;
-        }
-        .home{
-            display:flex;
-            flex-direction:column;
-            align-items:center;
-            justify-content: center;
-            margin:auto auto;
-            height: 100vh;
-            max-width:80rem;
-            text-align: center; 
-           
-        }
-
-        .home h1{
-            font-size:5rem;
-            font-weight:900;
-            margin-bottom: 3rem;
-            text-shadow:5px -5px 10px black;
-        }
-        .home p{
-            font-size:2.5rem;
-            font-family:Cursive;
-            font-weight:500;
-            
-        }
-        .home a{
-            text-decoration: none;
-            text-align: center;
-            padding:2rem;
-            color:#000;
-            background-color: #3366FF;
-            width:300px;
-            height:6rem;
-            border-radius: 10px;
-            margin:5rem;
-            font-size:2rem;
-            font-weight:600;
-            animation: fadeIN linear 1s infinite;
-        }
-
-        @keyframes fadeIN{
-            0%{
-                box-shadow:5px -5px 10px #2ECC71,-5px 5px 10px #2ECC71;
-            }
-            25%{
-                box-shadow:5px -5px 10px #FF5722,-5px 5px 10px #FF5722;
-            }
-            50%{
-                box-shadow:5px -5px 10px red,-5px 5px 10px red;
-            }
-            75%{
-                box-shadow:5px -5px 10px pink,-5px 5px 10px pink;
-            }
-            100%{
-                box-shadow:5px -5px 10px #9C27B0,-5px 5px 10px #9C27B0;
-            }   
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="home">
+    <header class="head">
         <h1>Tic Tac Toe</h1>
-        <p>Tic Tac Toe is a classic two-player game where players take turns marking X or O in a 3×3 grid. 
-            The objective is to be the first to get three of your marks in a row—horizontally, vertically, or
-            diagonally.</p>
-        <a href="index.html">Start the Game</a>
+    </header>
+    <section class="game-container">
+        <div class="game-board">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+       <div class="game-buttons">
+            <button class="btn">Reset</button>
+       </div>
     </section>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
