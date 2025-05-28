@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="PR_Techify">
+    <link rel="icon" href="TicTacToe.jpeg">
+    <title>Tic-Toc-toe</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #FF33CC;
+        }
+
+        img{
+            width:300px;
+            height:100px;
+            border-radius: 30px;
+        }
+
+        div h1{
+            color:#660066;
+        }
+        div h2{
+            color:#ffffff;
+            font-size:40px;
+        }
+        div h2 span{
+            color:#4B0082;
+            animation: fadeIn 2s ease-in-out infinite;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        div a{
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            background-color: aqua;
+            color:#002B36;
+            padding:20px;
+            width:300px;
+            height:60px;
+            font-size:20px;
+            font-weight: 600;
+            border-radius: 30px;
+            border: none;
+        }
+
+        .container{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+            height:100vh;
+            gap:20px;
+        }
+
+        .result{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <img src="Draw-image.png" alt="congradulation">
+        <div class="result">
+            <h1>Thank You !!!</h1>
+            <h2><span>🟣It's a Draw!🎯</span>Well Played Both, try again!!</h2>
+            <a href="Home.html">Play Again</a>
+        </div>
+    </section>
+</body>
+</html>
